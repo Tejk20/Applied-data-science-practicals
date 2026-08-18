@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Student Dataset Validation Report
+</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+.status {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>
+Great Expectations Validation Report
+</h1>
+
+
+<h2>
+Dataset Information
+</h2>
+
+
+<table>
+
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+
+<tr>
+<td>Dataset</td>
+<td>student_dataset_cleaned.csv</td>
+</tr>
+
+<tr>
+<td>Rows</td>
+<td>9000</td>
+</tr>
+
+<tr>
+<td>Columns</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>Missing Values</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Duplicate Rows</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Validation Date</td>
+<td>2026-08-18 09:54:53</td>
+</tr>
+
+</table>
+
+
+<h2>
+Validation Summary
+</h2>
+
+
+<table>
+
+<tr>
+<th>Metric</th>
+<th>Result</th>
+</tr>
+
+<tr>
+<td>Total Expectations</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>Successful Expectations</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>Failed Expectations</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Overall Status</td>
+<td class="status">PASSED</td>
+</tr>
+
+</table>
+
+
+<h2>
+Validation Rules</h2>
+
+<ul>
+
+<li>Required dataset columns must be present.</li>
+
+<li>No missing values are allowed.</li>
+
+<li>Roll numbers must be unique.</li>
+
+<li>Math marks must be between 0 and 100.</li>
+
+<li>Physics marks must be between 0 and 100.</li>
+
+<li>Chemistry marks must be between 0 and 100.</li>
+
+<li>Total marks must be between 0 and 300.</li>
+
+<li>Average marks must be between 0 and 100.</li>
+
+<li>Maximum marks must be between 0 and 100.</li>
+
+<li>Minimum marks must be between 0 and 100.</li>
+
+<li>Pass status must be either Pass or Fail.</li>
+
+<li>Performance category must contain valid categories.</li>
+
+<li>Grade score must be between 0 and 10.</li>
+
+<li>Comment length must be within the expected range.</li>
+
+</ul>
+
+
+<h2>
+Conclusion
+</h2>
+
+
+<p>
+
+The cleaned student dataset was validated using
+Great Expectations. The validation suite checked
+schema consistency, completeness, uniqueness,
+numerical ranges, categorical values, and engineered
+features.
+
+</p>
+
+
+<p>
+
+<b>
+Overall Validation Status:
+PASSED
+</b>
+
+</p>
+
+
+</body>
+
+</html>
